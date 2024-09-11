@@ -1,0 +1,116 @@
+/* Reseteo de página */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root{
+    --font-titulo: "Roboto", sans-serif;
+    --font-txt: "Lato", sans-serif;
+}
+
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;200,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Estilos generales */
+body {
+    text-align: center;
+    margin: 60px;
+    background-color: #001f36;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .titulo {
+    font-family: var(--font-titulo);
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  .txt{
+    font-family: var(--font-txt);
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-family: var(--font-txt);
+    margin-bottom: 25px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-family: var(--font-txt);
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .4s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .btn_reset{
+    background-color: #d56969;
+  }
+
+  .btn_reset:hover{
+    background-color: #864141;
+  }
+  
+  .titulo_data {
+    font-family: var(--font-titulo);
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+  
+  .titulo_data{
+    font-family: var(--font-txt);
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+
+  .valor_data, .desc_data{
+    font-family: var(--font-txt);
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
+
+  
+  /* Estilos para móviles */
+  @media (max-width: 600px) {
+    .titulo {
+      font-size: 25px;
+    }
+  
+    input[type="text"] {
+      font-size: 14px;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+    }
+
+  }
+  
